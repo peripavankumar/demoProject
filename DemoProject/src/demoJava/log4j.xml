@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration>
+<Appenders>
+<File name="log4j" fileName="ErrorLog.log" append="true">
+<PatternLayout pattern="%d{dd-MMM-yyyy HH:mm:ss} %level [%t] %logger{36} [%M] - %msg%n" />
+</File>
+</Appenders>
+
+<Loggers>
+<Logger name="demoJava" level="INFO" addivitivity="false">
+<AppenderRef ref="log4j" />
+</Logger>
+</Loggers>
+</Configuration>
